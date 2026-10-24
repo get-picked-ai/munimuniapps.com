@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muni Muni LLC — Product studio, Chicago</title>
+<meta name="description" content="Muni Muni LLC is a Chicago product studio that designs and ships web applications using AI-assisted and no-code development. Maker of Get Picked.">
+<meta property="og:title" content="Muni Muni LLC — Product studio, Chicago">
+<meta property="og:description" content="We design and ship simple web applications with AI-assisted and no-code development.">
+<meta property="og:url" content="https://www.munimuniapps.com/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://www.munimuniapps.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230B1E3F'/%3E%3Crect x='14' y='14' width='16' height='16' fill='%232F6BFF'/%3E%3Crect x='34' y='14' width='16' height='16' fill='%23ffffff'/%3E%3Crect x='14' y='34' width='16' height='16' fill='%23ffffff'/%3E%3Crect x='34' y='34' width='16' height='16' fill='%232F6BFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0B1E3F;--text:#17213A;--muted:#5B6478;--line:#E3E7EF;--bg:#FFFFFF;--soft:#F4F6FA;--accent:#2F6BFF;--accent-ink:#1E4FD1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;font-size:16px}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-family:Sora,Inter,sans-serif;margin:0;letter-spacing:-0.02em;color:var(--ink)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Sora,sans-serif;font-weight:700;font-size:17px;color:var(--ink);letter-spacing:-0.01em}
+.logo:hover{text-decoration:none}
+.mark{width:24px;height:24px;display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.mark i{display:block;background:var(--ink);border-radius:2px}
+.mark i:nth-child(1),.mark i:nth-child(4){background:var(--accent)}
+.links{display:flex;gap:28px;align-items:center;font-size:14px;font-weight:500}
+.links a{color:var(--text)}
+.links a:hover{color:var(--accent-ink);text-decoration:none}
+.links a.cta{color:#fff}.links a.cta:hover{color:#fff}
+.cta{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 18px;border-radius:8px;background:var(--ink);color:#fff;font-weight:600;font-size:14px;transition:background .15s ease,transform .15s ease}
+.cta:hover{background:var(--accent-ink);text-decoration:none;transform:translateY(-1px)}
+.cta.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.cta.ghost:hover{background:var(--soft);color:var(--ink)}
+/* hero */
+.hero{padding:96px 0 80px;border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:18px}
+.hero h1{font-size:54px;line-height:1.08;font-weight:700}
+.hero p{font-size:19px;color:var(--muted);margin:22px 0 32px;max-width:540px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,1fr);gap:12px;width:100%;max-width:420px;aspect-ratio:1/1;justify-self:end}
+.tiles span{min-height:0;border-radius:10px;background:var(--soft);border:1px solid var(--line);transition:transform .25s ease,background .25s ease}
+.tiles span.a{background:var(--accent)}
+.tiles span.b{background:var(--ink)}
+.tiles:hover span.a{transform:translateY(-6px)}
+.tiles:hover span.b{transform:translateY(6px)}
+/* sections */
+.section{padding:88px 0}
+.section.soft{background:var(--soft)}
+.head{max-width:640px;margin-bottom:44px}
+.head h2{font-size:34px;line-height:1.15}
+.head p{color:var(--muted);font-size:17px;margin:14px 0 0}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.feature{padding:28px;border:1px solid var(--line);border-radius:12px;background:#fff;transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease}
+.feature:hover{border-color:#C9D6F5;box-shadow:0 8px 24px rgba(11,30,63,.06);transform:translateY(-2px)}
+.feature .n{font-family:Sora,sans-serif;font-weight:600;font-size:13px;color:var(--accent-ink);margin-bottom:14px}
+.feature h3{font-size:19px;margin-bottom:10px}
+.feature p{margin:0;color:var(--muted);font-size:15px}
+/* product */
+.product{border:1px solid var(--line);border-radius:16px;padding:48px;background:#fff;max-width:720px}
+.product h3{font-size:30px;margin:8px 0 14px}
+.product p{color:var(--muted);margin:0 0 22px;max-width:560px}
+.badge{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#0E7A4F;background:#E6F6EE;padding:5px 10px;border-radius:999px}
+.shot{background:var(--ink);border-radius:12px;padding:28px;color:#fff;font-family:Inter,sans-serif}
+.shot .row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14px}
+.shot .row:last-child{border-bottom:0}
+.shot .k{color:rgba(255,255,255,.6)}
+.shot .v{font-weight:600}
+.shot .v.ok{color:#7FE0B0}
+/* about */
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.fact{border-top:2px solid var(--ink);padding-top:16px}
+.fact .l{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.fact .v{font-family:Sora,sans-serif;font-weight:600;font-size:20px;margin-top:6px;color:var(--ink)}
+/* contact */
+.contact{background:var(--ink);color:#fff;padding:80px 0}
+.contact h2{color:#fff;font-size:34px}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact p{color:rgba(255,255,255,.7);margin:14px 0 26px;max-width:460px}
+.contact address{font-style:normal;color:rgba(255,255,255,.85);line-height:1.8}
+.contact .l{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:8px}
+.cta.light{background:#fff;color:var(--ink)}
+.cta.light:hover{background:var(--accent);color:#fff}
+/* footer */
+.footer{padding:28px 0;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+.footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer a{color:var(--muted)}
+.reveal{opacity:0;transform:translateY(14px);animation:rv .6s cubic-bezier(.2,.7,.2,1) forwards}
+.reveal.d1{animation-delay:.1s}.reveal.d2{animation-delay:.2s}
+@keyframes rv{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none}.cta,.feature,.tiles span{transition:none}}
+@media (max-width:900px){
+  .hero{padding:56px 0 48px}.hero .wrap{grid-template-columns:1fr;gap:36px}.hero h1{font-size:38px}
+  .tiles{max-width:280px;justify-self:start}
+  .grid3,.facts{grid-template-columns:1fr}
+  .product{padding:28px}
+  .contact .wrap{grid-template-columns:1fr}
+  .links{display:none}
+  .section{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Muni Muni home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Muni Muni</a>
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow reveal">Product studio · Chicago</span>
+      <h1 class="reveal d1">We design and ship web applications with AI and no-code.</h1>
+      <p class="reveal d2">Muni Muni LLC is a small, founder-led studio. We take a product idea from concept to a working version real people can use, with the lightest tooling that gets it there.</p>
+      <div class="actions reveal d2">
+        <a class="cta" href="#contact">Start a conversation</a>
+        <a class="cta ghost" href="#products">See our work</a>
+      </div>
+    </div>
+    <div class="tiles" aria-hidden="true">
+      <span></span><span class="a"></span><span></span><span></span>
+      <span class="b"></span><span></span><span></span><span class="a"></span>
+      <span></span><span></span><span class="b"></span><span></span>
+      <span class="a"></span><span></span><span></span><span class="b"></span>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head">
+      <h2>What we do</h2>
+      <p>Three things, done end to end. Each one ends with something shipped, not a deck.</p>
+    </div>
+    <div class="grid3">
+      <div class="feature">
+        <div class="n">01</div>
+        <h3>Product strategy and prototyping</h3>
+        <p>Find the problem worth solving, define the smallest version that proves it, and put a clickable prototype in front of users within days.</p>
+      </div>
+      <div class="feature">
+        <div class="n">02</div>
+        <h3>AI-assisted development</h3>
+        <p>Build features on top of language and voice models, with evaluation and guardrails built in from the first version, so they behave in production.</p>
+      </div>
+      <div class="feature">
+        <div class="n">03</div>
+        <h3>No-code and low-code applications</h3>
+        <p>Full web apps with auth, payments, data and analytics on modern no-code platforms, with custom code only where it earns its place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="products">
+  <div class="wrap">
+    <div class="head">
+      <h2>Products</h2>
+      <p>What we build for ourselves is how we learn to build for others.</p>
+    </div>
+    <div class="product">
+      <div>
+        <span class="badge">Live</span>
+        <h3>Get Picked</h3>
+        <p>An AI mock interview that builds a personalized, spoken interview from a candidate's resume and the actual job description, then scores each answer against what the role needs. One-time purchase, no subscription.</p>
+        <a class="cta" href="https://getpicked.ai">Visit getpicked.ai</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="head">
+      <h2>About</h2>
+      <p>Founded in Chicago and run by a product manager with a background across consumer brands, software and enterprise learning. We stay small on purpose and partner selectively with founders and teams on early concepts and lightweight builds.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><div class="l">Entity</div><div class="v">Muni Muni LLC</div></div>
+      <div class="fact"><div class="l">Registered</div><div class="v">State of Illinois</div></div>
+      <div class="fact"><div class="l">Headquarters</div><div class="v">Chicago, IL</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Work with us</h2>
+      <p>Tell us what you are trying to build and where it is stuck. We reply to every message.</p>
+      <a class="cta light" id="mail" href="#contact" data-u="munimuniapps" data-d="gmail.com">Email us</a>
+    </div>
+    <div>
+      <div class="l">Mailing address</div>
+      <address>
+        Muni Muni LLC<br>
+        211 W Wacker Drive, Ste 120 #2315<br>
+        Chicago, IL 60606<br>
+        United States
+      </address>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© Muni Muni LLC. A registered limited liability company in the State of Illinois.</span>
+    <span><a href="https://getpicked.ai">Get Picked</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){var a=document.getElementById('mail');if(!a)return;
+function addr(){return a.getAttribute('data-u')+'@'+a.getAttribute('data-d');}
+a.addEventListener('click',function(e){e.preventDefault();window.location.href='mailto:'+addr();});
+})();
+</script>
+</body>
+</html>
